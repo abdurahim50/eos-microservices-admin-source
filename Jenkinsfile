@@ -35,7 +35,7 @@ spec:
         // Stage: Checkout SCM
         stage ('Checkout SCM'){
           // Checkout code from Git repository
-          git credentialsId: 'git', url: 'https://Abdurahim50@bitbucket.org/Abdurahim50/eos-micro-services-admin-source.git', branch: 'main'
+          git credentialsId: 'git', url: 'https://github.com/abdurahim50/eos-microservices-admin-source.git', branch: 'main'
           container('build') {
                 stage('Build a Maven project') {
                   // Build Maven project
